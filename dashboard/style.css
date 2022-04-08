@@ -15,14 +15,21 @@ html body {
 .navbar {
     background-color: #fff;
 }
+
+hr{
+    background-color: #00C9A8; 
+}
+
 form .search-button{
     width: 480px;
     background-color: #E5E5E5;
     color: #9F9F9F;
     border-radius: 25px;
 }
-form .search-text{
+
+form .search-text {
     background-color: #E5E5E5;
+    border-radius: 50px;
 }
 
 /* DOWN NAVBAR STYLING STARTS */
@@ -41,7 +48,6 @@ form .search-text{
 .sidebar-menu li {
     padding: 5px 12px;
 }
-
 
 /* DASHBOARD STYLING STARTS */
 
