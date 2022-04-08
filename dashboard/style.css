@@ -16,11 +16,11 @@ html body {
     background-color: #fff;
 }
 
-hr{
-    background-color: #00C9A8; 
+hr {
+    background-color: #00C9A8;
 }
 
-form .search-button{
+form .search-button {
     width: 480px;
     background-color: #E5E5E5;
     color: #9F9F9F;
@@ -59,36 +59,38 @@ form .search-text {
 
 .dashboard {
     font-size: 2rem;
-    
+
 }
-section .courses{
+
+section .courses {
     border-radius: 20px;
 }
-section .ongoing-courses{
-    background-color: #E5E5E5;
-    border: none;
-    border-radius: 20px;
-}
-section .saved-courses{
+
+section .ongoing-courses {
     background-color: #E5E5E5;
     border: none;
     border-radius: 20px;
 }
 
-.text-color{
-    color:#00C9A8;
+section .saved-courses {
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 20px;
+}
+
+.text-color {
+    color: #00C9A8;
 }
 
 /* DEADLINE */
 
-section .deadline{
+section .deadline {
     border-radius: 20px;
 }
 
-.text-view{
-    color:#00C9A8;
+.text-view {
+    color: #00C9A8;
     text-align: right;
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
