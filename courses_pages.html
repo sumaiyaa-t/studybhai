@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studybhai</title>
     <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/courses_page.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -114,11 +115,99 @@
         </ul>
     </nav>
 
-    <!--Dashboard-->
+    <!--Courses-->
     <section class="card container section-card">
         <div class="card-body">
-            <p class="container dashboard">Dashboard</p>
-            <div class="row ml-1 dashboard-container">
+
+            <!--Current Courses-->
+            <p class="container dashboard">Current Courses</p>
+            <hr class="mb-4" style="width:288px;">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col col-md-4 mb-4">
+                    <div class="current-courses card h-100">
+                        <img src="./images/courses/learn-illustrator.png" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>120 students</div>
+                                <div>5h 57m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Adobe Illustrator CC - Essentials
+                                Training</h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>Daniel Scott</div>
+                                <div><a href="#" class="text-view">Enrolled</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 mb-4">
+                    <div class="current-courses card h-100">
+                        <img src="./images/courses/learn-advance-animation-course-in-rohini-delhi 1.png"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>524 students</div>
+                                <div>6h 12m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Start Drawing: 3 Fun, Freeing Exercises to Spark Your Creativity
+                            </h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>Carly Kuhn</div>
+                                <div><a href="#" class="text-view">Enrolled</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Completed Courses-->
+            <p class="container dashboard">Completed Courses</p>
+            <hr class="mb-4" style="width:360px;">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col col-md-4 mb-4">
+                    <div class="completed-courses card h-100">
+                        <img src="./images/courses/learn-illustrator.png" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>120 students</div>
+                                <div>5h 57m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Adobe Illustrator CC - Essentials
+                                Training</h4>
+                            <div>Daniel Scott</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 mb-4">
+                    <div class="completed-courses card h-100">
+                        <img src="./images/courses/learn-advance-animation-course-in-rohini-delhi 1.png"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>524 students</div>
+                                <div>5h 12m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Start Drawing: 3 Fun, Freeing Exercises to Spark Your Creativity
+                            </h4>
+                            <div>Carly Kuhn</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 mb-4">
+                    <div class="completed-courses card h-100">
+                        <img src="./images/courses/Learn Complete-Course-in-Adobe-Photoshop-CC 1.png"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>187 students</div>
+                                <div>6h 12m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Adobe Photoshop CC - Essentials
+                                Training Course</h4>
+                            <div>Daniel Scott</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
