@@ -120,20 +120,22 @@
     <!--Purchases-->
     <section class="card container section-card">
         <div class="card-body">
-            <!--Current Courses-->
+            <!--My Purchase Title-->
             <p style="font-size: 2rem;">My Purchases</p>
             <hr class="mb-4" style="width:288px;background-color:#00C9A8;">
 
+            <!--Purchase Menu-->
             <div class="d-flex mb-3">
                 <div class="mr-3"><a href="./purchase_page.html" class="purchase-text">Transaction</a></div>
                 <div><a href="./voucher_page.html" class="purchase-text">Vouchers</a></div>
             </div>
             <hr style="background-color:#9F9F9F;">
             <h4 class="mt-4 mb-5">Enter your voucher code and get amazing discounts on courses site-wide.</h4>
+
+            <!--Input Voucher Code-->
             <div class="container mb-5">
-                <div class="">
-                    <div class="row h-100 justify-content-center align-items-center">
-                        <form class="voucher-form" id="voucherForm" onClick="voucherSubmit(event)">
+                    <div class="d-flex justify-content-center">
+                        <form class="voucher-form" id="voucherForm" onsubmit="voucherSubmit(event)">
                             <div class="voucher-row d-flex justify-content-center">
                                 <div class="voucher-input-column voucher-box">
                                     <input type="text" class="voucher-input">
@@ -145,18 +147,15 @@
                                 </div>
                             </div>
 
-                            <div class="mt-3">
+                            <!--Submit Voucher Button-->
+                            <div class="mt-3 text-center">
                                 <button class="voucher-button" id="VoucherButton" type="submit">Verify Voucher</button>
                                 <div id="verificationText" class="text-view">
                                 </div>
                             </div>
                         </form>
                     </div>
-
-                </div>
-
             </div>
-
         </div>
         </div>
     </section>
