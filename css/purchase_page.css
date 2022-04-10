@@ -14,12 +14,7 @@ hr .purchase-border {
     border: 1px solid #9F9F9F;
 }
 
-/*Vouchers*/
-
-.voucher-row {
-    display: flex;
-    margin: 0;
-}
+/*Voucher Input Form*/
 
 .voucher-row div {
     padding: 0;
@@ -36,6 +31,8 @@ hr .purchase-border {
     width: 4rem;
     height: 3rem;
 }
+
+/*Submit Voucher Button */
 
 .voucher-button {
     width: 487px;
