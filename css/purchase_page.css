@@ -1,0 +1,62 @@
+/*Purchase Menu*/
+
+.purchase-text {
+    color: #3A3A3A;
+}
+
+.purchase-text:hover {
+    color: #00C9A8;
+    text-decoration: none;
+}
+
+hr .purchase-border {
+    color: #3A3A3A;
+    border: 1px solid #9F9F9F;
+}
+
+/*Vouchers*/
+
+.voucher-row {
+    display: flex;
+    margin: 0;
+}
+
+.voucher-row div {
+    padding: 0;
+    display: flex;
+}
+
+.voucher-form {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.voucher-input {
+    width: 4rem;
+    height: 3rem;
+}
+
+.voucher-button {
+    width: 487px;
+    height: 69px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+/* Mobile Devices*/
+
+@media only screen and (max-width: 600px) {
+
+    .voucher-input {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .voucher-button {
+        width: 200px;
+        height: 50px;
+    }
+}
