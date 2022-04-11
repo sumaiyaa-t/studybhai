@@ -134,27 +134,63 @@
 
             <!--Input Voucher Code-->
             <div class="container mb-5">
-                    <div class="d-flex justify-content-center">
-                        <form class="voucher-form" id="voucherForm" onsubmit="voucherSubmit(event)">
-                            <div class="voucher-row d-flex justify-content-center">
-                                <div class="voucher-input-column voucher-box">
-                                    <input type="text" class="voucher-input">
-                                    <input type="text" class="voucher-input">
-                                    <input type="text" class="voucher-input">
-                                    <input type="text" class="voucher-input">
-                                    <input type="text" class="voucher-input">
-                                    <input type="text" class="voucher-input">
+                <div class="d-flex justify-content-center">
+                    <form class="voucher-form" id="voucherForm" onsubmit="voucherSubmit(event)">
+                        <div class="voucher-row d-flex justify-content-center">
+                            <div class="voucher-input-column voucher-box">
+                                <input type="text" class="voucher-input">
+                                <input type="text" class="voucher-input">
+                                <input type="text" class="voucher-input">
+                                <input type="text" class="voucher-input">
+                                <input type="text" class="voucher-input">
+                                <input type="text" class="voucher-input">
+                            </div>
+                        </div>
+
+                        <!--Submit Voucher Button-->
+                        <div class="mt-3 text-center">
+                            <button class="voucher-button" id="VoucherButton" data-toggle="modal"
+                                data-target="#verifiedModal" type="submit">Verify Voucher</button>
+
+                            <!--Verified Voucher Modal-->
+                            <div class="modal fade" id="verifiedModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Voucher Succesfully Added!</p>
+                                            <img src="./images/icons/double-tick.png">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!--Submit Voucher Button-->
-                            <div class="mt-3 text-center">
-                                <button class="voucher-button" id="VoucherButton" type="submit">Verify Voucher</button>
-                                <div id="verificationText" class="text-view">
+                            <!--Not Verified Voucher Modal-->
+                            <div class="modal fade" id="unverifiedModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Wrong Voucher Code!</p>
+                                            <img src="./images/icons/Error.png">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         </div>
