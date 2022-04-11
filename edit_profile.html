@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studybhai</title>
     <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/edit_profile.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -105,7 +106,7 @@
                     <div class="row mb-3">
                         <label for="inputFullName" class="col-sm-2 col-form-label">Full Name</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-info form-control">
                         </div>
                     </div>
 
@@ -113,8 +114,8 @@
                     <div class="row mb-3">
                         <label class="col-sm-2 col-form-label">Profile Picture</label>
                         <div class="col-sm-10">
-                            <input id="image" class="form-control" type="file" name="profile_photo" placeholder="Photo"
-                                required="" capture>
+                            <input id="image" class="form-info form-control" type="file" name="profile_photo"
+                                placeholder="Photo" required="" capture>
                             </input>
                         </div>
                     </div>
@@ -123,7 +124,7 @@
                     <div class="row mb-3">
                         <label for="educationalInstitute" class="col-sm-2 col-form-label">Educational Institute</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-info form-control">
                         </div>
                     </div>
 
@@ -131,7 +132,7 @@
                     <div class="row mb-3">
                         <label for="fieldOfInterest" class="col-sm-2 col-form-label">Field Of Interest</label>
                         <div class="col-sm-10">
-                            <select class="form-select form-control">
+                            <select class="form-select form-info form-control">
                                 <option value="1"></option>
                             </select>
                         </div>
@@ -143,7 +144,7 @@
                     <div class="row mb-3">
                         <label for="employmentStatus" class="col-sm-2 col-form-label">Employment Status</label>
                         <div class="col-sm-10">
-                            <select class="form-select form-control">
+                            <select class="form-select form-info form-control">
                                 <option value="1"></option>
                             </select>
                         </div>
@@ -153,7 +154,7 @@
                     <div class="row mb-3">
                         <label for="industry" class="col-sm-2 col-form-label">Industry</label>
                         <div class="col-sm-10">
-                            <select class="form-select form-control">
+                            <select class="form-select form-info form-control">
                                 <option value="1"></option>
                             </select>
                         </div>
@@ -163,7 +164,7 @@
                     <div class="row mb-3">
                         <label for="employer" class="col-sm-2 col-form-label">Employer</label>
                         <div class="col-sm-10">
-                            <select class="form-select form-control">
+                            <select class="form-select form-info form-control">
                                 <option value="1"></option>
                             </select>
                         </div>
@@ -173,7 +174,7 @@
                     <div class="row mb-3">
                         <label for="occupation" class="col-sm-2 col-form-label">Occupation</label>
                         <div class="col-sm-10">
-                            <select class="form-select form-control">
+                            <select class="form-select form-info form-control">
                                 <option value="1"></option>
                             </select>
                         </div>
@@ -185,7 +186,7 @@
                     <div class="row mb-3">
                         <label for="aboutMe" class="col-sm-2 col-form-label">About Me</label>
                         <div class="col-sm-10">
-                            <textarea rows="5" style="height:100%;" class="form-control"></textarea>
+                            <textarea rows="5" style="height:100%;" class=" form-info form-control"></textarea>
                         </div>
                     </div>
 
@@ -193,7 +194,7 @@
                     <div class="row mb-3">
                         <label for="location" class="col-sm-2 col-form-label">Location</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-info form-control">
                         </div>
                     </div>
 
@@ -218,25 +219,124 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!--Date-->
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                            <div id="dateDropdownDiv">
+                                <select id="dateDropdownField"></select>
+                                <select id="monthDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                                <select id="yearDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Phone Number-->
+                    <div class="row mb-3">
+                        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Save Info Button-->
                     <div class="row">
-                        <div class="col-sm-10 offset-sm-2">
-                            <button type="submit" class="btn btn-primary">Save Info</button>
+                        <div class="col-sm-10 text-center">
+                            <button type="submit" class="save-info-button">Save Info</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-white text-center text-md-start" style="background: #004A3E;">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-left">
+                        <div class="d-flex mb-4">
+                            <img src="./images/logo/StudyBhai Logo 1.png" style="width:100x; height: 30px;">
+                            <button class="ml-5 language-button">English</button>
+                        </div>
+                        
+                        <p>
+                            StudyBhai is a place where you, your team or company can develop.
+                            Identify goals, learn and track progress!
+                        </p>
+                        <p>© 2021 StudyBhai. All rights reserved.</p>
+                    </div>
+        
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">StudyBhai</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Courses
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"> Prices</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"> Prices</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">About Us</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Company   
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">  Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">Need Help?</h5>
+
+                        <a href="#!" class="text-white">Contact Us</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </footer>
+      
+    </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-dropdown-datepicker@1.3.0/dist/jquery-dropdown-datepicker.min.js">
+    </script>
+    <script src="./js/date_picker.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
