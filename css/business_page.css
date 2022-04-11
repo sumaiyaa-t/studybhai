@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* Business Text Section*/
+.heading-section{
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+/* Business Form*/
+form .business-form{
+    border-radius: 20px;
+}
+
+/* Get in Touch Button*/
+.contact-button {
+    width: 400px;
+    height: 53px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+/*Terms & Conditions*/
+.signup-condition{
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Mobile Devices*/
+
+@media only screen and (max-width: 600px) {
+
+    .heading-section{
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 30px;
+        color: #3A3A3A;
+    }
+
+    .contact-button {
+        width: 200px;
+        height: 50px;
+    }
+}
