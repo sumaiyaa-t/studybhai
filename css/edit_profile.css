@@ -1,16 +1,33 @@
+/* Input Form*/
 form .form-info{
 border-radius: 20px;
 width: 585px;
 height: 50px;
 }
 
-.save-info-button {
-    width: 304px;
-    height: 53px;
+/*Add Image*/
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    width: 211px;
+    height: 48px;
     background: #00C9A8;
     color: #fff;
     border: none;
     border-radius: 50px;
+}
+
+/* Save Info Button*/
+.save-info-button {
+    width: 304px;
+    height: 50px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
 }
 
 /*Footer*/
