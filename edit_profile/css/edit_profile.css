@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: #E5E5E5;
+}
+
+/*TOP NAVBAR STYLING STARTS */
+.navbar {
+    background-color: #fff;
+}
+
+form .search-button {
+    width: 480px;
+    background-color: #E5E5E5;
+    color: #9F9F9F;
+    border-radius: 25px;
+}
+
+form .search-text {
+    background-color: #E5E5E5;
+    border-radius: 50px;
+}
+
+/* DOWN NAVBAR STYLING STARTS */
+
+.sidebar {
+    margin-top: 25px;
+    background: #00C9A8;
+    border-radius: 50px;
+}
+
+.sidebar-links {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+.sidebar-menu li {
+    padding: 5px 12px;
+}
+
+/* EDIT PROFILE STYLING STARTS */
+
+.section-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Input Form*/
+form .form-info{
+border-radius: 20px;
+width: 585px;
+height: 50px;
+}
+
+/*Add Image*/
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    width: 211px;
+    height: 48px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+/* Save Info Button*/
+.save-info-button {
+    width: 304px;
+    height: 50px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/*Footer*/
+.language-button {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid #9F9F9F;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+
+/*Mobile Device*/
+@media only screen and (max-width: 600px) {
+
+    form .form-info{
+        border-radius: 20px;
+        width: 300px;
+        height: 50px;
+        }
+
+    .save-info-button {
+        width: 200px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,348 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studybhai</title>
+    <link rel="stylesheet" href="./css/edit_profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <!--Top Navbar 1-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand">
+                <img src="./images/logo/StudyBhai Logo 1.png" height="28" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item navbar-brand dropdown">
+                        Explore
+                        <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+                    </li>
+                </ul>
+
+                <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0">
+                    <div class="p-1 search-button shadow-sm">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
+                            <input type="search" placeholder="Search" aria-describedby="button-addon2"
+                                class="search-text border-0 form-control ">
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item navbar-brand">
+                        <a href="./business_page.html" class="navbar-brand">For Business</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="navbar-brand">
+                            <img src="./images/icons/message.png" height="28" alt="messages">
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="navbar-brand">
+                            <img src="./images/icons/notification.png" height="28" alt="notification">
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./cart_page.html" class="navbar-brand">
+                            <img src="./images/icons/cart.png" height="28" alt="cart">
+                        </a>
+                    </li>
+                    <li class="nav-item navbar-brand">
+                        <img src="./images/icons/line.png" height="28" alt="">
+                    </li>
+                    <li class="nav-item navbar-brand">
+                        <img src="./images/icons/user.png" height="28" alt="user">
+                    </li>
+                    <li class="nav-item navbar-brand dropdown">
+                        Tonmoy
+                        <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="width:12em; text-align: center;">
+                            <li><a href="" style="color:#000;">Profile</a></li>
+                            <hr>
+                            <li><a href="" style="color:#000;">Settings</a></li>
+                            <hr>
+                            <li><a href="" style="color:#000;">Help</a></li>
+                            <hr>
+                            <li><a href="" style="color:#000;">Log out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Edit Profile -->
+    <section class="card container section-card">
+        <div class="card-body">
+
+            <!--Edit Profile Title-->
+            <p style="font-size: 2rem;">Edit Profile</p>
+            <hr class="mb-4" style="width:180px;background-color:#00C9A8;">
+
+            <!--Edit Information-->
+            <div class="container">
+
+                <form>
+                    <!--Full Name-->
+                    <div class="row mb-3">
+                        <label for="inputFullName" class="col-sm-2 col-form-label">Full Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Upload Photo-->
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Profile Picture</label>
+                        <div class="col-sm-10 d-flex">
+                            <img id="userPhoto" class="mr-3" src="./images/icons/user-photo.png" alt="user image" />
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label class="custom-file-upload text-center p-2">Upload photo
+                                        <input type="file" onChange="readURL(this)"/>
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 text-muted">Maximum size of 1MB. JPG, GIF, or PNG.</div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <!--Educational Institute-->
+                    <div class="row mb-3">
+                        <label for="educationalInstitute" class="col-sm-2 col-form-label">Educational Institute</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Field of Interest-->
+                    <div class="row mb-3">
+                        <label for="fieldOfInterest" class="col-sm-2 col-form-label">Field Of Interest</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="mb-5" style="background-color:#9F9F9F;">
+
+                    <!--Employment Status-->
+                    <div class="row mb-3">
+                        <label for="employmentStatus" class="col-sm-2 col-form-label">Employment Status</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Industry-->
+                    <div class="row mb-3">
+                        <label for="industry" class="col-sm-2 col-form-label">Industry</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Employer-->
+                    <div class="row mb-3">
+                        <label for="employer" class="col-sm-2 col-form-label">Employer</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Occupation-->
+                    <div class="row mb-3">
+                        <label for="occupation" class="col-sm-2 col-form-label">Occupation</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="mb-5" style="background-color:#9F9F9F;">
+
+                    <!--About Me-->
+                    <div class="row mb-3">
+                        <label for="aboutMe" class="col-sm-2 col-form-label">About Me</label>
+                        <div class="col-sm-10">
+                            <textarea rows="5" style="height:100%;" class=" form-info form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <!--Location-->
+                    <div class="row mb-3">
+                        <label for="location" class="col-sm-2 col-form-label">Location</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Gender-->
+                    <div class="row mb-3">
+                        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="other"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Date-->
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                            <div id="dateDropdownDiv">
+                                <select id="dateDropdownField"></select>
+                                <select id="monthDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                                <select id="yearDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Phone Number-->
+                    <div class="row mb-3">
+                        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Save Info Button-->
+                    <div class="row">
+                        <div class="col-sm-10 text-center">
+                            <button type="submit" class="save-info-button">Save Info</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-white text-center text-md-start" style="background: #004A3E;">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-left">
+                        <div class="d-flex mb-4">
+                            <img src="./images/logo/StudyBhai Logo 1.png" style="width:100x; height: 30px;">
+                            <button class="ml-5 language-button">English</button>
+                        </div>
+                        
+                        <p>
+                            StudyBhai is a place where you, your team or company can develop.
+                            Identify goals, learn and track progress!
+                        </p>
+                        <p>© 2021 StudyBhai. All rights reserved.</p>
+                    </div>
+        
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">StudyBhai</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Courses
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"> Prices</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"> Prices</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">About Us</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Company   
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">  Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                        <h5 style="color:#00C9A8">Need Help?</h5>
+
+                        <a href="#!" class="text-white">Contact Us</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </footer>
+      
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-dropdown-datepicker@1.3.0/dist/jquery-dropdown-datepicker.min.js">
+    </script>
+    <script src="./js/date_picker.js"></script>
+    <script src="./js/upload_photo.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
