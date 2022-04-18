@@ -32,8 +32,11 @@ form .search-text {
 
 .sidebar {
     margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
     background: #00C9A8;
     border-radius: 50px;
+    width: 18em;
 }
 
 .sidebar-links {
@@ -43,6 +46,10 @@ form .search-text {
 
 .sidebar-menu li {
     padding: 5px 12px;
+}
+
+.down-navbar-icons {
+    height: 28;
 }
 
 /* CART PAGE STYLING STARTS */
@@ -61,6 +68,10 @@ section .purchased-courses {
     border-radius: 20px;
 }
 
+.instructor-name {
+    padding-right: 5rem;
+}
+
 .text-title {
     font-style: normal;
     font-weight: 700;
@@ -70,6 +81,10 @@ section .purchased-courses {
 }
 
 /*Checkout Button */
+
+.align-checkout-button {
+    text-align: right;
+}
 
 .checkout-button {
     width: 300px;
@@ -83,6 +98,16 @@ section .purchased-courses {
 /* Mobile Devices*/
 
 @media only screen and (max-width: 600px) {
+
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 300px;
+    }
+
+    .align-checkout-button {
+        text-align: center;
+    }
+
     .checkout-button {
         width: 200px;
         height: 50px;
