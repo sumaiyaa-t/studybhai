@@ -11,6 +11,7 @@ html body {
 }
 
 /*TOP NAVBAR STYLING STARTS */
+
 .navbar {
     background-color: #fff;
 }
@@ -28,6 +29,7 @@ form .search-text {
 }
 
 /* Navbar Start For Free Button*/
+
 .button-start-for-free {
     width: 200px;
     height: 50px;
@@ -94,6 +96,7 @@ section .courses {
 }
 
 /*Take the next step*/
+
 .p-text-next {
     margin-top: 200px;
     font-weight: 800;
@@ -119,6 +122,7 @@ section .courses {
 }
 
 /*StudyBhai For Organization*/
+
 .p-text-studybhai {
     margin-top: 200px;
     font-weight: 600;
@@ -132,8 +136,9 @@ section .courses {
     color: #3A3A3A;
 
 }
-.section-button-register{
-    text-align:left;
+
+.section-button-register {
+    text-align: left;
 }
 
 .button-register-now {
@@ -147,6 +152,7 @@ section .courses {
 }
 
 /*Footer*/
+
 .language-button {
     width: 100px;
     height: 30px;
@@ -163,7 +169,7 @@ section .courses {
 /*  media screen for tab ( portrait ) */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-    
+
     /*Landing Page Hero*/
     .cover-bg {
         height: 500px;
@@ -174,8 +180,8 @@ section .courses {
         top: 50%;
     }
 
-     /*Take the next step*/
-     .p-text-next {
+    /*Take the next step*/
+    .p-text-next {
         margin-top: 50px;
         text-align: center;
     }
@@ -184,7 +190,7 @@ section .courses {
         text-align: center;
     }
 
-    
+
     /*StudyBhai For Organization*/
     .p-text-studybhai {
         margin-top: 50px;
@@ -196,8 +202,8 @@ section .courses {
         text-align: center;
     }
 
-    .section-button-register{
-        text-align:center;
+    .section-button-register {
+        text-align: center;
     }
 
 }
@@ -214,6 +220,7 @@ section .courses {
         width: 500px;
 
     }
+
     .cover-bg {
         height: 500px;
         background: #b4e2d6;
@@ -222,10 +229,9 @@ section .courses {
     .centered {
         top: 30%;
     }
-    /*TOP NAVBAR STYLING STARTS */
-
-
 }
+
+/*  media screen for mobile devices*/
 
 @media only screen and (max-width: 600px) {
 
@@ -250,7 +256,7 @@ section .courses {
         font-size: 30px;
         color: #3A3A3A;
     }
-    
+
     .subheading {
         margin-top: 20px;
         font-weight: 600;
@@ -279,8 +285,8 @@ section .courses {
         text-align: center;
     }
 
-    .section-button-register{
-        text-align:center;
+    .section-button-register {
+        text-align: center;
     }
 
 }
