@@ -58,13 +58,13 @@ form .search-text {
 }
 
 .heading {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 30px;
     color: #3A3A3A;
 }
 
 .subheading {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     color: #3A3A3A;
 }
@@ -243,6 +243,19 @@ section .courses {
 
     .centered {
         top: 50%;
+    }
+
+    .heading {
+        font-weight: 700;
+        font-size: 30px;
+        color: #3A3A3A;
+    }
+    
+    .subheading {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #3A3A3A;
     }
 
     /*Take the next step*/
