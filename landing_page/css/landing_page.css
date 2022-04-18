@@ -72,14 +72,35 @@ form .search-text {
 }
 
 .start-learning-button {
-    width: 234px;
-    height: 52.84px;
+    width: 250px;
+    height: 60px;
+    background: #FFFFFF;
+    font-size: 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
 
 /*Courses*/
+
+.top-courses-title{
+    font-size: 2em;
+}
+
+.align-view-all {
+    text-align: right;
+}
+
+.button-view-all {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #00C9A8;
+    background: #fff;
+    color: #00C9A8;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
 
 section .courses {
     background-color: #E5E5E5;
@@ -95,6 +116,11 @@ section .courses {
     color: #3A3A3A;
 }
 
+.instructor-name {
+    padding-right: 5rem;
+}
+
+
 /*Take the next step*/
 
 .p-text-next {
@@ -104,8 +130,19 @@ section .courses {
     color: #3A3A3A;
 }
 
-.section-button-start {
+.section-button-align {
     text-align: left;
+}
+
+.section-button-start {
+    width: 250px;
+    height: 60px;
+    background: #00C9A8;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 /*Earn a certificate*/
@@ -142,10 +179,11 @@ section .courses {
 }
 
 .button-register-now {
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 60px;
     background: #00C9A8;
     color: #fff;
+    font-size: 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -180,13 +218,22 @@ section .courses {
         top: 50%;
     }
 
+    /*Courses*/
+
+    .top-courses-title{
+        text-align: center;
+    }
+    .align-view-all {
+        text-align: center;
+    }
+
     /*Take the next step*/
     .p-text-next {
         margin-top: 50px;
         text-align: center;
     }
 
-    .section-button-start {
+    .section-button-align {
         text-align: center;
     }
 
@@ -254,14 +301,22 @@ section .courses {
     .heading {
         font-weight: 700;
         font-size: 30px;
-        color: #3A3A3A;
+        
     }
 
     .subheading {
         margin-top: 20px;
         font-weight: 600;
         font-size: 18px;
-        color: #3A3A3A;
+    }
+
+    /*Courses*/
+
+    .top-courses-title{
+        text-align: center;
+    }
+    .align-view-all {
+        text-align: center;
     }
 
     /*Take the next step*/
@@ -270,7 +325,7 @@ section .courses {
         text-align: center;
     }
 
-    .section-button-start {
+    .section-button-align {
         text-align: center;
     }
 
