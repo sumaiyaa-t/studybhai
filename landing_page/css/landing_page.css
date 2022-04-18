@@ -27,24 +27,21 @@ form .search-text {
     border-radius: 50px;
 }
 
-/* Navbar Download Button*/
-.nav-button {
+/* Navbar Start For Free Button*/
+.button-start-for-free {
     width: 200px;
     height: 50px;
     background: #00C9A8;
     color: #fff;
     border: none;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 /* LANDING PAGE STYLING STARTS */
 
-.section-card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-}
 .cover-bg {
+    position: relative;
     width: 100%;
     height: 500px;
     background: #b4e2d6;
@@ -52,31 +49,33 @@ form .search-text {
     background-size: 100%;
     border-radius: 5px 5px 0 0;
 }
+
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .heading{
+}
+
+.heading {
     font-weight: 800;
     font-size: 30px;
     color: #3A3A3A;
-  }
-  .subheading{
+}
+
+.subheading {
     font-weight: 800;
     font-size: 20px;
     color: #3A3A3A;
-  }
-  .start-learning-button{
+}
+
+.start-learning-button {
     width: 234px;
     height: 52.84px;
     border: none;
     border-radius: 50px;
-    cursor:pointer;
-  }
-
-
+    cursor: pointer;
+}
 
 /*Courses*/
 
@@ -85,6 +84,7 @@ section .courses {
     border: none;
     border-radius: 20px;
 }
+
 .text-title {
     font-style: normal;
     font-weight: 700;
@@ -93,19 +93,58 @@ section .courses {
     color: #3A3A3A;
 }
 
-/*3rd Section*/
-.subheading2{
+/*Take the next step*/
+.p-text-next {
+    margin-top: 200px;
     font-weight: 800;
     font-size: 25px;
     color: #3A3A3A;
-  }
+}
 
-  .subheading4{
-    font-weight: 400;
+.section-button-start {
+    text-align: left;
+}
+
+/*Earn a certificate*/
+
+.p-class-certificate {
+    font-weight: 500;
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+.skills-images {
+    width: 163px;
+    height: 173px
+}
+
+/*StudyBhai For Organization*/
+.p-text-studybhai {
+    margin-top: 200px;
+    font-weight: 600;
     font-size: 34px;
     color: #3A3A3A;
-  }
+}
 
+.p-text-details {
+    font-weight: 400;
+    font-size: 24px;
+    color: #3A3A3A;
+
+}
+.section-button-register{
+    text-align:left;
+}
+
+.button-register-now {
+    width: 200px;
+    height: 50px;
+    background: #00C9A8;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
 
 /*Footer*/
 .language-button {
@@ -118,23 +157,49 @@ section .courses {
     border-radius: 50px;
     cursor: pointer;
     overflow: hidden;
-   
+
 }
 
 /*  media screen for tab ( portrait ) */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+    /*Landing Page Hero*/
     .cover-bg {
         height: 500px;
         background: #b4e2d6;
     }
+
     .centered {
-        top: 30%;
-      }
-    .nav-button {
-        width: 200px;
-        height: 50px;
+        top: 50%;
     }
+
+     /*Take the next step*/
+     .p-text-next {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .section-button-start {
+        text-align: center;
+    }
+
+    
+    /*StudyBhai For Organization*/
+    .p-text-studybhai {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .p-text-details {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-button-register{
+        text-align:center;
+    }
+
 }
 
 
@@ -143,33 +208,66 @@ section .courses {
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
 
     /* For landscape layouts only */
+
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 500px;
+
+    }
     .cover-bg {
         height: 500px;
         background: #b4e2d6;
     }
+
     .centered {
         top: 30%;
-      }
-    .nav-button {
-        width: 200px;
-        height: 50px;
     }
+    /*TOP NAVBAR STYLING STARTS */
+
+
 }
 
 @media only screen and (max-width: 600px) {
+
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 300px;
+
+    }
+
+    /*Landing Page Hero */
     .cover-bg {
         height: 700px;
         background: #b4e2d6;
     }
+
     .centered {
         top: 50%;
-      }
-    .nav-button {
-        width: 200px;
-        height: 50px;
     }
 
-    
+    /*Take the next step*/
+    .p-text-next {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .section-button-start {
+        text-align: center;
+    }
+
+    /*StudyBhai For Organization*/
+    .p-text-studybhai {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .p-text-details {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-button-register{
+        text-align:center;
+    }
+
 }
-
-
