@@ -81,6 +81,7 @@ form .search-text {
 /*  media screen for tab ( portrait ) */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+
     /*Cover Photo*/
     .cover-bg {
         height: 200px;
@@ -124,6 +125,10 @@ form .search-text {
 
 /*  media screen for mobile devices  */
 @media only screen and (max-width: 600px) {
+
+    form .search-button {
+        width: 300px;
+    }
 
     .cover-bg {
         height: 200px;
