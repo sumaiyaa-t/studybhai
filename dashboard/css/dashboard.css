@@ -31,7 +31,19 @@ form .search-text {
 .user-profile-dropdown {
     background-color: #00C9A8;
 }
+/*Messages*/
+.messages-hr{
+    background-color: #00C9A8;
+}
 
+form .search-message-button{
+    width:300px;
+    background-color: #E5E5E5;
+    color: #9F9F9F;
+    border-radius: 20px;
+}
+
+/*Notifications*/
 .notification-hr {
     background-color: #00C9A8;
 }
@@ -41,6 +53,8 @@ form .search-text {
     font-size: 15px;
     color: #9F9F9F;
 }
+
+
 
 /* DOWN NAVBAR STYLING STARTS */
 
