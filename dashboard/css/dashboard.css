@@ -28,6 +28,20 @@ form .search-text {
     border-radius: 50px;
 }
 
+.user-profile-dropdown {
+    background-color: #00C9A8;
+}
+
+.notification-hr {
+    background-color: #00C9A8;
+}
+
+.notification-time {
+    font-weight: 300;
+    font-size: 15px;
+    color: #9F9F9F;
+}
+
 /* DOWN NAVBAR STYLING STARTS */
 
 .sidebar {

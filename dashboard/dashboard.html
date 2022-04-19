@@ -53,9 +53,30 @@
                             <img src="./images/icons/message.png" height="28" alt="messages">
                         </a>
                     </li>
+                    
+                    <!--Notifications-->
                     <li class="nav-item ">
-                        <a href="#" class="navbar-brand">
+                        <a href="#" class="navbar-brand dropdown" data-toggle="dropdown">
                             <img src="./images/icons/notification.png" height="28" alt="notification">
+                            <div class="dropdown-menu">
+                                <div>
+                                    <p class="text-center">Notifications</p>
+                                    <hr class="notification-hr">
+
+                                    <div class="d-flex mb-3">
+                                        <div class="p-2">
+                                            <p>Your password was changed</p>
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="p-2">
+                                            <p>Your Purchase was succesful.</p>
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -74,11 +95,11 @@
                         <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="width:12em; text-align: center;">
                             <li><a href="" style="color:#000;">Profile</a></li>
-                            <hr>
+                            <hr class="user-profile-dropdown">
                             <li><a href="" style="color:#000;">Settings</a></li>
-                            <hr>
+                            <hr class="user-profile-dropdown">
                             <li><a href="" style="color:#000;">Help</a></li>
-                            <hr>
+                            <hr class="user-profile-dropdown">
                             <li><a href="" style="color:#000;">Log out</a></li>
                         </ul>
                     </li>
