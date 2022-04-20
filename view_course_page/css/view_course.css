@@ -163,6 +163,13 @@ form .search-message-button {
     background: #00C9A8;
     border-radius: 50px;
 }
+.bookmark{
+    color: #00C9A8;
+    font-size: 25px;
+    margin-left: 1.5em;
+    margin-top: 12px;
+    cursor:pointer;
+}
 
 /*About this course*/
 .about-this-course {
@@ -182,6 +189,12 @@ form .search-message-button {
     font-weight: 500;
     font-size: 26px;
     color: #000000;
+}
+
+.instructor-details-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9F9F9F;
 }
 
 /*Course Reviews*/

@@ -233,9 +233,9 @@
                             <div class="image-container">
                                 <img src="./images/course-image.png" class="video-image img-fluid">
                                 <div class="">
-                                    <img src="./images/video-player.png" class="video-player img-fluid">
-                                    <iframe style="display:none" id="video" src="" frameborder="0"
-                                        allowfullscreen></iframe>
+                                    <a href="#">                                    
+                                        <img src="./images/video-player.png" class="video-player img-fluid">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -252,6 +252,7 @@
                                             <i class="fa-solid fa-star star-color"></i>
                                             <i class="fa-solid fa-star star-color"></i>
                                             <i class="fa-solid fa-star star-color"></i>
+                                             <i class="fa-solid fa-star star-color"></i>
                                         </div>
                                         <div class="mx-2">4.7</div>
                                     </div>
@@ -266,6 +267,7 @@
                             </div>
                             <div class="d-flex">
                                 <button class="enroll-button">Enroll</button>
+                                <a href="#"><i class="bookmark fa-regular fa-bookmark"></i></a>
                             </div>
                         </div>
                     </div>
@@ -281,28 +283,28 @@
     <div class="card">
         <div class="card-body">
 
-            <div class="d-flex justify-content-around mb-3">
-                <div class="p-2">
+            <div class="d-flex flex-wrap mb-3">
+                <div class="p-lg-5 p-2">
                     <p>18th August</p>
                     <p class="text-muted">Start Course</p>
                 </div>
                 <div class="vr"></div>
-                <div class="p-2">
+                <div class="p-lg-5 p-2">
                     <p>15 Lessons</p>
                     <p class="text-muted">Total</p>
                 </div>
                 <div class="vr"></div>
-                <div class="p-2">
+                <div class="p-lg-5 p-2">
                     <p>5 Tests</p>
                     <p class="text-muted">Practical</p>
                 </div>
                 <div class="vr"></div>
-                <div class="p-2">
+                <div class="p-lg-5 p-2">
                     <p>Beginner</p>
                     <p class="text-muted">Course Level</p>
                 </div>
                 <div class="vr"></div>
-                <div class="p-2">
+                <div class="p-lg-5 p-2">
                     <p>122 Students</p>
                     <p class="text-muted">Enrolled</p>
                 </div>
@@ -370,14 +372,14 @@
     <div class="card description-card">
         <div class="card-body">
             <div class="d-flex">
-                <div class="me-5">
-                    <img src="./images/course-instructor.png">
+                <div class="mt-5 mx-lg-5 me-5">
+                    <img src="./images/course-instructor.png" class="mx-auto d-block">
                 </div>
                 <div class="mt-4">
                     <p class="instructor-name-text">John Doe</p>
                     <p>Graphic Designer</p>
-                    <div class="d-flex">
-                        <div>
+                    <div class="d-flex flex-wrap mb-3">
+                        <div class="d-flex">
                             <i class="fa-solid fa-star star-color"></i>
                             <i class="fa-solid fa-star star-color"></i>
                             <i class="fa-solid fa-star star-color"></i>
@@ -390,13 +392,13 @@
                         <div class>
                             <img src="./images/learner-icon.png">
                         </div>
-                        <p class="ms-2">245 learners</p>
+                        <p class="ms-2 instructor-details-text">245 Learners</p>
                     </div>
                     <div class="d-flex mt-2">
                         <div class>
                             <img src="./images/courses-icon.png">
                         </div>
-                        <p class="ms-2">4 courses</p>
+                        <p class="ms-2 instructor-details-text">4 Courses</p>
                     </div>
                 </div>
             </div>
@@ -545,15 +547,16 @@
     </div>
 </section>
 
+<!-- Footer -->
 <section class="">
-    <!-- Footer -->
+
     <footer class="text-white text-center text-md-start" style="background: #004A3E;">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-left">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
                     <div class="d-flex mb-4">
                         <img src="./images/logo/StudyBhai Logo 1.png" style="width:100x; height: 30px;">
                         <button class="ms-5 language-button">English</button>
@@ -568,7 +571,7 @@
 
 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
                     <h5 style="color:#00C9A8">StudyBhai</h5>
 
                     <ul class="list-unstyled mb-0">
@@ -584,7 +587,7 @@
                     </ul>
                 </div>
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
                     <h5 style="color:#00C9A8">About Us</h5>
 
                     <ul class="list-unstyled mb-0">
@@ -601,7 +604,7 @@
                 </div>
 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-left">
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
                     <h5 style="color:#00C9A8">Need Help?</h5>
                     <a href="#!" class="text-decoration-none text-white">Contact Us</a>
                 </div>
