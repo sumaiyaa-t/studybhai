@@ -173,16 +173,34 @@ form .search-message-button {
 
 /*Description*/
 
-.description-card{
+.description-card {
     height: 18em;
 }
 
 /*Course Instructor*/
-.instructor-name-text{
-font-weight: 500;
-font-size: 26px;
-color: #000000;
+.instructor-name-text {
+    font-weight: 500;
+    font-size: 26px;
+    color: #000000;
+}
 
+/*Course Reviews*/
+.rating-number {
+    font-weight: 700;
+    font-size: 48px;
+    color: #3A3A3A;
+}
+
+.stars-number {
+    font-weight: 400;
+    font-size: 14px;
+    color: #3A3A3A;
+}
+
+.reviewer-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9F9F9F;
 }
 
 /*Footer*/
