@@ -4,782 +4,792 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studybhai</title>
-    <link rel="stylesheet" href="./css/cr2.css" />
-    <!-- CSS only -->
+
+    <!--==================== BOOTSTRAP ====================-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--==================== FONT AWESOME ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/cr2.css" />
+
+    <title>Studybhai</title>
 </head>
 
+<body>
 
-<header>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+    <!--==================== TOP NAVBAR ====================-->
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
 
-                <!--Navbar Logo-->
-                <a href="#" class="navbar-brand">
-                    <img src="./images/logo/StudyBhai Logo 1.png" height="28" alt="Logo">
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!--Navbar Logo-->
+                    <a href="#" class="navbar-brand">
+                        <img src="./images/logo/StudyBhai Logo 1.png" height="28" alt="Logo">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
 
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
 
-                        <!--Explore-->
-                        <li class="nav-item dropdown navbar-brand">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
-                        </li>
-                    </ul>
+                            <!--Explore-->
+                            <li class="nav-item dropdown navbar-brand">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                            </li>
+                        </ul>
 
-                    <!--Search form-->
-                    <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0">
-                        <div class="p-1 search-button shadow-sm">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
-                                            class="fa fa-search"></i></button>
+                        <!--Search form-->
+                        <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0">
+                            <div class="p-1 search-button shadow-sm">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                    <input type="search" placeholder="Search" aria-describedby="button-addon2"
+                                        class="search-text border-0 form-control ">
                                 </div>
-                                <input type="search" placeholder="Search" aria-describedby="button-addon2"
-                                    class="search-text border-0 form-control ">
                             </div>
-                        </div>
-                    </form>
+                        </form>
 
-                    <!--For business-->
-                    <ul class="nav navbar-nav ms-auto">
-                        <li class="nav-item navbar-brand">
-                            <a href="../for_business/business_page.html" class="nav-link">For Business</a>
-                        </li>
+                        <!--For business-->
+                        <ul class="nav navbar-nav ms-auto">
+                            <li class="nav-item navbar-brand">
+                                <a href="../for_business/business_page.html" class="nav-link">For Business</a>
+                            </li>
 
-                        <!--Messages-->
-                        <li class="nav-item navbar-brand dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <img src="./images/icons/message.png" height="28" alt="messages">
-                            </a>
+                            <!--Messages-->
+                            <li class="nav-item navbar-brand dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <img src="./images/icons/message.png" height="28" alt="messages">
+                                </a>
 
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <p class="text-center">Messages</p>
-                                <hr class="messages-hr">
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <p class="text-center">Messages</p>
+                                    <hr class="messages-hr">
 
-                                <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0 p-2">
-                                    <div class="p-1 search-message-button shadow-sm">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button id="button-addon2" type="submit"
-                                                    class="btn btn-link text-secondary"><i
-                                                        class="fa fa-search"></i></button>
-                                            </div>
-                                            <input type="search" placeholder="Search in messages"
-                                                aria-describedby="button-addon2"
-                                                class="search-text border-0 form-control ">
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="d-flex mt-3">
-                                    <div class="p-2">
-                                        <img src="./images/icons/message_profile.png">
-                                    </div>
-                                    <div>
-                                        <div class="p-1 sender-title">StudyBhai</div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <p>Lorem ipsum dolor sit.</p>
-                                            </div>
-
-                                            <div class="ml-auto p-1">
-                                                <p class="notification-time">5:45pm</p>
+                                    <form
+                                        class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0 p-2">
+                                        <div class="p-1 search-message-button shadow-sm">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button id="button-addon2" type="submit"
+                                                        class="btn btn-link text-secondary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                                <input type="search" placeholder="Search in messages"
+                                                    aria-describedby="button-addon2"
+                                                    class="search-text border-0 form-control ">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </form>
+                                    <div class="d-flex mt-3">
+                                        <div class="p-2">
+                                            <img src="./images/icons/message_profile.png">
+                                        </div>
+                                        <div>
+                                            <div class="p-1 sender-title">StudyBhai</div>
+                                            <div class="d-flex">
+                                                <div class="p-1">
+                                                    <p>Lorem ipsum dolor sit.</p>
+                                                </div>
 
-                                <div class="d-flex mt-3">
-                                    <div class="p-2">
-                                        <img src="./images/icons/message_profile.png">
-                                    </div>
-                                    <div>
-                                        <div class="p-1 sender-title">StudyBhai</div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <p>Lorem ipsum dolor sit.</p>
-                                            </div>
-
-                                            <div class="ml-auto p-1">
-                                                <p class="notification-time">5:45pm</p>
+                                                <div class="ml-auto p-1">
+                                                    <p class="notification-time">5:45pm</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="d-flex mt-3">
+                                        <div class="p-2">
+                                            <img src="./images/icons/message_profile.png">
+                                        </div>
+                                        <div>
+                                            <div class="p-1 sender-title">StudyBhai</div>
+                                            <div class="d-flex">
+                                                <div class="p-1">
+                                                    <p>Lorem ipsum dolor sit.</p>
+                                                </div>
+
+                                                <div class="ml-auto p-1">
+                                                    <p class="notification-time">5:45pm</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <!--Notification-->
+                            <li class="nav-item navbar-brand dropdown">
 
-                        <!--Notification-->
-                        <li class="nav-item navbar-brand dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <img src="./images/icons/notification.png" height="28" alt="notification">
+                                </a>
 
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <img src="./images/icons/notification.png" height="28" alt="notification">
-                            </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <p class="text-center">Notifications</p>
+                                    <hr class="notification-hr">
 
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <p class="text-center">Notifications</p>
-                                <hr class="notification-hr">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <p>Your password was changed</p>
+                                        </div>
 
-                                <div class="d-flex">
-                                    <div class="p-2">
-                                        <p>Your password was changed</p>
+                                        <div class="ml-auto p-2">
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
                                     </div>
 
-                                    <div class="ml-auto p-2">
-                                        <p class="notification-time">08/09/21</p>
-                                    </div>
-                                </div>
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <p>Your password was changed</p>
+                                        </div>
 
-                                <div class="d-flex">
-                                    <div class="p-2">
-                                        <p>Your password was changed</p>
-                                    </div>
-
-                                    <div class="ml-auto p-2">
-                                        <p class="notification-time">08/09/21</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--Cart-->
-                        <li class="nav-item navbar-brand">
-                            <a href="#" class="nav-link">
-                                <img src="./images/icons/cart.png" height="28" alt="cart">
-                            </a>
-                        </li>
-
-                        <div class="vr vr-color d-none d-lg-block"></div>
-
-                        <!--User image-->
-                        <li class="nav-item navbar-brand">
-                            <a href="#" class="nav-link">
-                                <img src="./images/icons/user.png" height="28" alt="user">
-                            </a>
-                        </li>
-
-                        <!--User dropdown-->
-
-                        <li class="nav-item dropdown navbar-brand">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tonmoy</a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#" class="dropdown-item text-center">Profile</a>
-
-                                <div class="dropdown-divider user-profile-dropdown"></div>
-
-                                <a href="#" class="dropdown-item text-center">Settings</a>
-
-                                <div class="dropdown-divider user-profile-dropdown"></div>
-
-                                <a href="#" class="dropdown-item text-center">Help</a>
-
-                                <div class="dropdown-divider user-profile-dropdown"></div>
-
-                                <a href="#" class="dropdown-item text-center" data-bs-toggle="modal"
-                                    data-bs-target="#logoutModal">Log out</a>
-
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-
-<!-- Modal -->
-<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content p-5">
-            <div class="card modal-card p-5">
-                <div class="mb-4">
-                    <h5 class="text-center" id="exampleModalLabel">Are you sure you want to log out?</h5>
-                </div>
-
-                <div class="text-center">
-                    <button type="button" class="yes-button mb-2">Yes</button>
-                    <button type="button" class="no-button mb-2" data-bs-dismiss="modal">No</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!--Course Page -->
-<section>
-    <div>
-        <!--Cover Photo-->
-        <div class="cover-bg"></div>
-        <div class="container">
-
-            <!--Course Card-->
-            <div class="card course-card">
-                <div class="card-body course-card-body">
-                    <div class="row ml-1">
-                        <p class="course-name-title">Adobe Illustrator CC Essentials Training</p>
-                        <div class="d-flex align-items-center">
-                            <img src="./images/GG-school-of-arts.png">
-                            <div class="ms-2">GG School of Arts</div>
-                        </div>
-                        <div class="col-lg-6 mt-2">
-                            <div class="image-container">
-                                <img src="./images/course-image.png" class="video-image img-fluid">
-                                <div class="">
-                                    <a href="#">
-                                        <img src="./images/video-player.png" class="video-player img-fluid">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Course Contents-->
-
-                        <div class="col-lg-6">
-                            <p>10 lessons(55m)</p>
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">1. Introduction</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
+                                        <div class="ml-auto p-2">
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
+                            </li>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">2. Your Project</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                            <!--Cart-->
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <img src="./images/icons/cart.png" height="28" alt="cart">
+                                </a>
+                            </li>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">3. Basics</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="vr vr-color d-none d-lg-block"></div>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">4. How to use tools?</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                            <!--User image-->
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <img src="./images/icons/user.png" height="28" alt="user">
+                                </a>
+                            </li>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">5. Pen Tool</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                            <!--User dropdown-->
+                            <li class="nav-item dropdown navbar-brand">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tonmoy</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="#" class="dropdown-item text-center">Profile</a>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">6. Designing a Logo</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">7. Designing a flyer</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                                    <a href="#" class="dropdown-item text-center">Settings</a>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">8. Prototyping</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">9. Recent Works</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
-                                </div>
-                            </a>
+                                    <a href="#" class="dropdown-item text-center">Help</a>
 
-                            <a href="#" class="course-content-link text-decoration-none">
-                                <div class="d-flex">
-                                    <div class="p-1">
-                                        <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
-                                    </div>
-                                    <div>
-                                        <p class="">10. Designing a 3D Logo</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <p>2.32</p>
-                                    </div>
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                    <a href="#" class="dropdown-item text-center" data-bs-toggle="modal"
+                                        data-bs-target="#logoutModal">Log out</a>
                                 </div>
-                            </a>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- User dropdown logout modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-5">
+                <div class="card modal-card p-5">
+                    <div class="mb-4">
+                        <h5 class="text-center" id="exampleModalLabel">Are you sure you want to log out?</h5>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" class="yes-button mb-2">Yes</button>
+                        <button type="button" class="no-button mb-2" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</section>
-
-<!--About this course-->
-<section class="container mt-5">
-    <div class="card">
-        <div class="card-body">
-
-            <!--Course curriculam-->
-            <div class="card mb-2">
-                <div class="d-flex flex-wrap justify-content-center mt-3">
-                    <p class="me-3 course-curriculam-details">Homeworks</p>
-                    <p class="me-3 course-curriculam-details">Syllabus</p>
-                    <p class="me-3 course-curriculam-details">Course Materials</p>
-                    <p class="me-3 course-curriculam-details">Instructor</p>
-                    <p class="course-curriculam-details">Reviews</p>
-                </div>
-            </div>
 
 
-            <!--Quizzes-->
-            <div class="card-body course-details-cards mb-3">
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="">Quiz 1</div>
-                    <div class="text-muted"> Due Aug 10th, 2021</div>
-                </div>
-                <hr>
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="">Quiz 2</div>
-                    <div class="text-muted"> Due Aug 10th, 2021</div>
-                </div>
-                <hr>
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="">Quiz 3</div>
-                    <div class="text-muted"> Due Aug 10th, 2021</div>
-                </div>
-                <div class="mt-4 text-center">
-                    <a class="text-decoration-none view-works-link">View Due Works</a>
-                </div>
-            </div>
+    <!--==================== TOP COURSE CARD ====================-->
+    <section>
+        <div>
+            <!--Cover Photo-->
+            <div class="cover-bg"></div>
+            <div class="container">
 
-            <!--Weekly pan-->
-            <div class="card-body course-details-cards mb-3">
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 1:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 2:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 3:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 4:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 5:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 6:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-                <hr>
-                <div class="d-flex mb-3">
-                    <div class="week-number">Week 7:</div>
-                    <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.</div>
-                </div>
-            </div>
-
-            <!--Course contents posted date-->
-            <div class="card-body course-details-cards mb-3">
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="">Course Outline</div>
-                    <div class="text-muted"> Posted Aug 10th, 2021</div>
-                </div>
-                <hr>
-                <div class="d-flex flex-wrap justify-content-between mt-3">
-                    <div class="">Lecture Slide 1</div>
-                    <div class="text-muted"> Posted Aug 10th, 2021</div>
-                </div>
-            </div>
-
-            <!--Instructor name-->
-            <div class="card-body course-details-cards mb-3">
-                <div class="d-flex flex-wrap justify-content-between">
-                    <div class="d-flex flex-wrap">
-                        <div class="mt-5 mx-lg-5 me-5">
-                            <img src="./images/course-instructor.png" class="mx-auto d-block">
-                        </div>
-                        <div class="mt-4">
-                            <p class="instructor-name-text">John Doe</p>
-                            <p>Graphic Designer</p>
-                            <div class="d-flex flex-wrap mb-3">
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                </div>
-                                <div class="mx-2">4.7</div>
-                                <div class="mx-2">(221 ratings)</div>
+                <!--Course Card-->
+                <div class="card course-card">
+                    <div class="card-body course-card-body">
+                        <div class="row ml-1">
+                            <p class="course-name-title">Adobe Illustrator CC Essentials Training</p>
+                            <div class="d-flex align-items-center">
+                                <img src="./images/GG-school-of-arts.png">
+                                <div class="ms-2">GG School of Arts</div>
                             </div>
-                            <div class="d-flex mt-2">
-                                <div class>
-                                    <img src="./images/learner-icon.png">
+                            <div class="col-lg-6 mt-2">
+                                <div class="image-container">
+                                    <img src="./images/course-image.png" class="video-image img-fluid">
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./images/video-player.png" class="video-player img-fluid">
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="ms-2 instructor-details-text">245 Learners</p>
                             </div>
-                            <div class="d-flex mt-2">
-                                <div class>
-                                    <img src="./images/courses-icon.png">
-                                </div>
-                                <p class="ms-2 instructor-details-text">4 Courses</p>
+
+                            <!--Course Contents-->
+                            <div class="col-lg-6 mt-3">
+                                <p>10 lessons(55m)</p>
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">1. Introduction</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">2. Your Project</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">3. Basics</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">4. How to use tools?</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">5. Pen Tool</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">6. Designing a Logo</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">7. Designing a flyer</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">8. Prototyping</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">9. Recent Works</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="course-content-link text-decoration-none">
+                                    <div class="d-flex">
+                                        <div class="p-1">
+                                            <i class="fa-regular fa-play-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <p class="">10. Designing a 3D Logo</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p>2.32</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mt-5 me-5">Offered by</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="d-flex align-items-center">
-                            <img src="./images/GG-school-of-arts.png">
-                            <div class="ms-2">GG School of Arts</div>
-                        </div>
+    <!--==================== ABOUT THIS COURSE ====================-->
+
+    <section class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+
+                <!--Course curriculam-->
+                <div class="card mb-2">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a href="#homeworks" class="me-3 course-curriculam-details">Homeworks</a>
+                        <a href="#syllabus" class="me-3 course-curriculam-details">Syllabus</a>
+                        <a href="#course-materials" class="me-3 course-curriculam-details">Course Materials</a>
+                        <a href="#instructor" class="me-3 course-curriculam-details">Instructor</a>
+                        <a href="#reviews" class="course-curriculam-details">Reviews</a>
                     </div>
-
                 </div>
 
-            </div>
 
-            <!--Course Reviews-->
+                <!--Homeworks-->
+                <div class="card-body course-details-cards mb-3" id="homeworks">
+                    <div class="d-flex flex-wrap justify-content-between mt-3">
+                        <div class="">Quiz 1</div>
+                        <div class="text-muted"> Due Aug 10th, 2021</div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-wrap justify-content-between mt-3">
+                        <div class="">Quiz 2</div>
+                        <div class="text-muted"> Due Aug 10th, 2021</div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-wrap justify-content-between mt-3">
+                        <div class="">Quiz 3</div>
+                        <div class="text-muted"> Due Aug 10th, 2021</div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a class="text-decoration-none view-works-link">View Due Works</a>
+                    </div>
+                </div>
 
-            <div class="card-body course-details-cards mb-3">
-                <div class="row ms-lg-5 mb-lg-5">
+                <!--Syllabus-->
+                <div class="card-body course-details-cards mb-3" id="syllabus">
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 1:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 2:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 3:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 4:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 5:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 6:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <div class="week-number">Week 7:</div>
+                        <div class="ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eveniet.
+                        </div>
+                    </div>
+                </div>
 
-                    <!--Rating numbers-->
-                    <div class="col-lg-4">
-                        <div class="d-flex mt-5">
-                            <p class="p-2 rating-number">4.7</p>
+                <!--Course materials-->
+                <div class="card-body course-details-cards mb-3" id="course-materials">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="">Course Outline</div>
+                        <div class="text-muted"> Posted Aug 10th, 2021</div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-wrap justify-content-between mt-3">
+                        <div class="">Lecture Slide 1</div>
+                        <div class="text-muted"> Posted Aug 10th, 2021</div>
+                    </div>
+                </div>
+
+                <!--Instructor-->
+                <div class="card-body course-details-cards mb-3" id="instructor">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="d-flex flex-wrap">
+                            <div class="mt-5 mx-lg-5 me-5">
+                                <img src="./images/course-instructor.png" class="mx-auto d-block">
+                            </div>
                             <div class="mt-4">
-                                <i class="fa-solid fa-star star-color"></i>
-                                <i class="fa-solid fa-star star-color"></i>
-                                <i class="fa-solid fa-star star-color"></i>
-                                <i class="fa-solid fa-star star-color"></i>
-                                <i class="fa-solid fa-star-half star-color"></i>
-                                <p class="reviewer-text">69 Reviews</p>
-                            </div>
-                        </div>
-
-                        <!--Rating bars-->
-                        <div class="row g-0">
-                            <div class="col-lg-2">
-                                <div class="stars-number">5 stars</div>
-                            </div>
-
-                            <div class="col-lg-10 mt-1">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 90%; background-color: #00C9A8"></div>
+                                <p class="instructor-name-text">John Doe</p>
+                                <p>Graphic Designer</p>
+                                <div class="d-flex flex-wrap mb-3">
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                    </div>
+                                    <div class="mx-2">4.7</div>
+                                    <div class="mx-2">(221 ratings)</div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <div class>
+                                        <img src="./images/learner-icon.png">
+                                    </div>
+                                    <p class="ms-2 instructor-details-text">245 Learners</p>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <div class>
+                                        <img src="./images/courses-icon.png">
+                                    </div>
+                                    <p class="ms-2 instructor-details-text">4 Courses</p>
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <p class="mt-5 me-5">Offered by</p>
 
-                        <div class="row g-0">
-                            <div class="col-lg-2">
-                                <div class="stars-number">4 stars</div>
-                            </div>
-
-                            <div class="col-lg-10 mt-1">
-                                <div class="progress mb-1">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 45%; background-color: #00C9A8"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row g-0">
-                            <div class="col-lg-2">
-                                <div class="stars-number">3 stars</div>
-                            </div>
-
-                            <div class="col-lg-10 mt-1">
-                                <div class="progress mb-1">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 20%; background-color: #00C9A8"></div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row g-0">
-                            <div class="col-lg-2">
-                                <div class="stars-number">2 stars</div>
-                            </div>
-
-                            <div class="col-lg-10 mt-1">
-                                <div class="progress mb-1">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 5%; background-color: #00C9A8"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row g-0">
-                            <div class="col-lg-2">
-                                <div class="stars-number">1 star</div>
-                            </div>
-
-                            <div class="col-lg-10 mt-1">
-                                <div class="progress mb-1">
-                                    <div class="progress-bar" role="progressbar"></div>
-                                </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./images/GG-school-of-arts.png">
+                                <div class="ms-2">GG School of Arts</div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!--Reviewers-->
-                    <div class="col-lg-8">
-                        <div class="mt-4 ms-lg-5">
-                            <div>
-                                <div>
+                <!--Reviews-->
+                <div class="card-body course-details-cards mb-3" id="reviews">
+                    <div class="row ms-lg-5 mb-lg-5">
+
+                        <!--Rating numbers-->
+                        <div class="col-lg-4">
+                            <div class="d-flex mt-lg-5">
+                                <p class="p-2 rating-number">4.7</p>
+                                <div class="mt-4">
                                     <i class="fa-solid fa-star star-color"></i>
                                     <i class="fa-solid fa-star star-color"></i>
                                     <i class="fa-solid fa-star star-color"></i>
                                     <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star-half star-color"></i>
+                                    <p class="reviewer-text">69 Reviews</p>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="me-4 reviewer-text">By Frank</div>
-                                    <div class="reviewer-text">10th June,2020</div>
-                                </div>
-                                <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
                             </div>
 
-                            <div>
-                                <div>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
+                            <!--Rating bars-->
+                            <div class="row g-0">
+                                <div class="col-lg-2">
+                                    <div class="stars-number">5 stars</div>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="me-4 reviewer-text">By Frank</div>
-                                    <div class="reviewer-text">10th June,2020</div>
-                                </div>
-                                <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
-                            </div>
 
-                            <div>
-                                <div>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                    <i class="fa-solid fa-star star-color"></i>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="me-4 reviewer-text">By Frank</div>
-                                    <div class="reviewer-text">10th June,2020</div>
-                                </div>
-                                <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <form>
-
-
-                                <div class="form-group">
-                                    <div class="rating"> <input type="radio" name="rating" value="5" id="5">
-                                        <label for="5">☆</label>
-                                        <input type="radio" name="rating" value="4" id="4">
-                                        <label for="4">☆</label>
-                                        <input type="radio" name="rating" value="3" id="3">
-                                        <label for="3">☆</label>
-                                        <input type="radio" name="rating" value="2" id="2">
-                                        <label for="2">☆</label>
-                                        <input type="radio" name="rating" value="1" id="1">
-                                        <label for="1">☆</label>
+                                <div class="col-lg-10 mt-1">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 90%; background-color: #00C9A8"></div>
                                     </div>
+                                </div>
+                            </div>
 
+                            <div class="row g-0">
+                                <div class="col-lg-2">
+                                    <div class="stars-number">4 stars</div>
+                                </div>
 
+                                <div class="col-lg-10 mt-1">
+                                    <div class="progress mb-1">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 45%; background-color: #00C9A8"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="col-lg-2">
+                                    <div class="stars-number">3 stars</div>
+                                </div>
+
+                                <div class="col-lg-10 mt-1">
+                                    <div class="progress mb-1">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 20%; background-color: #00C9A8"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="col-lg-2">
+                                    <div class="stars-number">2 stars</div>
+                                </div>
+
+                                <div class="col-lg-10 mt-1">
+                                    <div class="progress mb-1">
+                                        <div class="progress-bar" role="progressbar"
+                                            style="width: 5%; background-color: #00C9A8"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="col-lg-2">
+                                    <div class="stars-number">1 star</div>
+                                </div>
+
+                                <div class="col-lg-10 mt-1">
+                                    <div class="progress mb-1">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Reviewers-->
+                        <div class="col-lg-8">
+                            <div class="mt-4 ms-lg-5">
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="me-4 reviewer-text">By Frank</div>
+                                        <div class="reviewer-text">10th June,2020</div>
+                                    </div>
+                                    <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="me-4 reviewer-text">By Frank</div>
+                                        <div class="reviewer-text">10th June,2020</div>
+                                    </div>
+                                    <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                        <i class="fa-solid fa-star star-color"></i>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="me-4 reviewer-text">By Frank</div>
+                                        <div class="reviewer-text">10th June,2020</div>
+                                    </div>
+                                    <p class="reviewer-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                                <!--Review submission form-->
+                                <form>
                                     <div class="form-group">
-                                        <label for=""></label>
-                                        <input type="text" class="form-control review-form" id=""
-                                            aria-describedby="emailHelp" placeholder="Write Review">
-                                    </div>
+                                        <div class="rating"> <input type="radio" name="rating" value="5" id="5">
+                                            <label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4">
+                                            <label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3">
+                                            <label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2">
+                                            <label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1">
+                                            <label for="1">☆</label>
+                                        </div>
 
-                                    <div class="form-group mt-2">
-                                        <button type="submit" class="review-form-button form-control">Submit Review</button>
-                                    </div>
-                            </form>
+                                        <div class="form-group">
+                                            <label for=""></label>
+                                            <input type="text" class="form-control review-form" id=""
+                                                aria-describedby="emailHelp" placeholder="Write Review">
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <button type="submit" class="review-form-button form-control">Submit
+                                                Review</button>
+                                        </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-5 text-center">
-                    <a class="text-decoration-none view-works-link">View All Reviews</a>
+                    <div class="mt-5 text-center">
+                        <a class="text-decoration-none view-works-link">View All Reviews</a>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 
 
-<!-- Footer -->
-<section class="">
+    <!--==================== FOOTER ====================-->
+    <section>
+        <footer class="text-white text-center text-md-start" style="background: #004A3E;">
 
-    <footer class="text-white text-center text-md-start" style="background: #004A3E;">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
-                    <div class="d-flex mb-4">
-                        <img src="./images/logo/StudyBhai Logo 1.png" style="width:100x; height: 30px;">
-                        <button class="ms-5 language-button">English</button>
+            <!-- Grid container -->
+            <div class="container p-4">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+                        <div class="d-flex mb-4">
+                            <img src="./images/logo/StudyBhai Logo 1.png" style="width:100x; height: 30px;">
+                            <button class="ms-5 language-button">English</button>
+                        </div>
+
+                        <p>
+                            StudyBhai is a place where you, your team or company can develop.
+                            Identify goals, learn and track progress!
+                        </p>
+                        <p>© 2021 StudyBhai. All rights reserved.</p>
                     </div>
 
-                    <p>
-                        StudyBhai is a place where you, your team or company can develop.
-                        Identify goals, learn and track progress!
-                    </p>
-                    <p>© 2021 StudyBhai. All rights reserved.</p>
-                </div>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">StudyBhai</h5>
 
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-decoration-none  text-white">Courses
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none  text-white"> Prices</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none text-white"> Prices</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
-                    <h5 style="color:#00C9A8">StudyBhai</h5>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">About Us</h5>
 
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white">Courses
-                        </li>
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white"> Prices</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-decoration-none text-white"> Prices</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
-                    <h5 style="color:#00C9A8">About Us</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-decoration-none  text-white">Company
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none  text-white"> Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-decoration-none  text-white">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white">Company
-                        </li>
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white"> Roadmap</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-decoration-none  text-white">Terms and conditions</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
-                    <h5 style="color:#00C9A8">Need Help?</h5>
-                    <a href="#!" class="text-decoration-none text-white">Contact Us</a>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">Need Help?</h5>
+                        <a href="#!" class="text-decoration-none text-white">Contact Us</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 
-</section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
-
-</head>
 </body>
 
 </html>

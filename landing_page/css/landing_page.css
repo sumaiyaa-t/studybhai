@@ -1,5 +1,7 @@
+/*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
+/*=============== BASE ===============*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +12,7 @@ html body {
     color: black;
 }
 
-/*TOP NAVBAR STYLING STARTS */
+/*=============== TOP NAVBAR ===============*/
 
 .navbar {
     background-color: #fff;
@@ -40,8 +42,7 @@ form .search-text {
     cursor: pointer;
 }
 
-/* LANDING PAGE STYLING STARTS */
-
+/*=============== LANDING PAGE ===============*/
 .cover-bg {
     position: relative;
     width: 100%;
@@ -81,9 +82,9 @@ form .search-text {
     cursor: pointer;
 }
 
-/*Courses*/
+/*=============== COURSES ===============*/
 
-.top-courses-title{
+.top-courses-title {
     font-size: 2em;
 }
 
@@ -121,7 +122,7 @@ section .courses {
 }
 
 
-/*Take the next step*/
+/*=============== TAKE THE NEXT STEP ===============*/
 
 .p-text-next {
     margin-top: 200px;
@@ -145,8 +146,7 @@ section .courses {
     cursor: pointer;
 }
 
-/*Earn a certificate*/
-
+/*=============== Earn a certificate ===============*/
 .p-class-certificate {
     font-weight: 500;
     font-size: 30px;
@@ -158,7 +158,7 @@ section .courses {
     height: 173px
 }
 
-/*StudyBhai For Organization*/
+/*=============== StudyBhai For Organization ===============*/
 
 .p-text-studybhai {
     margin-top: 200px;
@@ -189,7 +189,7 @@ section .courses {
     cursor: pointer;
 }
 
-/*Footer*/
+/*=============== FOOTER ===============*/
 
 .language-button {
     width: 100px;
@@ -201,8 +201,9 @@ section .courses {
     border-radius: 50px;
     cursor: pointer;
     overflow: hidden;
-
 }
+
+/*=============== MEDIA QUERIES ===============*/
 
 /*  media screen for tab ( portrait ) */
 
@@ -220,9 +221,10 @@ section .courses {
 
     /*Courses*/
 
-    .top-courses-title{
+    .top-courses-title {
         text-align: center;
     }
+
     .align-view-all {
         text-align: center;
     }
@@ -301,7 +303,7 @@ section .courses {
     .heading {
         font-weight: 700;
         font-size: 30px;
-        
+
     }
 
     .subheading {
@@ -312,11 +314,16 @@ section .courses {
 
     /*Courses*/
 
-    .top-courses-title{
+    .top-courses-title {
         text-align: center;
     }
+
     .align-view-all {
         text-align: center;
+    }
+
+    .instructor-name {
+        padding-right: 8rem;
     }
 
     /*Take the next step*/

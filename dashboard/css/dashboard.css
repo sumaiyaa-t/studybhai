@@ -1,4 +1,7 @@
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+/*=============== BASE ===============*/
 
 * {
     box-sizing: border-box;
@@ -11,7 +14,7 @@ html body {
     background-color: #e5e5e5;
 }
 
-/*TOP NAVBAR STYLING STARTS */
+/*=============== TOP NAVBAR ===============*/
 .navbar {
     background-color: #fff;
 }
@@ -89,7 +92,7 @@ form .search-message-button {
     border-radius: 50px;
 }
 
-/* DOWN NAVBAR STYLING STARTS */
+/*=============== DOWN NAVBAR ===============*/
 
 .sidebar {
     margin-top: 25px;
@@ -108,7 +111,7 @@ form .search-message-button {
     height: 35;
 }
 
-/* DASHBOARD STYLING STARTS */
+/*=============== DASHBOARD ===============*/
 
 .section-card {
     margin-top: 20px;
@@ -153,6 +156,8 @@ section .deadline {
     margin-bottom: 20px;
     text-decoration: none;
 }
+
+/*=============== MEDIA QUERIES  ===============*/
 
 /*  media screen for tab ( portrait ) */
 

@@ -4,109 +4,254 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studybhai</title>
-    <link rel="stylesheet" href="./css/purchase_page.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!--==================== BOOTSTRAP ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--==================== FONT AWESOME ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/purchase_page.css" />
+
+    <title>Studybhai</title>
 </head>
 
+
 <body>
+
+    <!--==================== TOP NAVBAR ====================-->
     <header>
-        <!--Top Navbar 1-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" class="navbar-brand">
-                <img src="./images/Logo/StudyBhai Logo 1.png" height="28" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item navbar-brand dropdown">
-                        Explore
-                        <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
-                    </li>
-                </ul>
+                    <!--Navbar Logo-->
+                    <a href="#" class="navbar-brand">
+                        <img src="./images/logo/StudyBhai Logo 1.png" height="28" alt="Logo">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0">
-                    <div class="p-1 search-button shadow-sm">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
-                                        class="fa fa-search"></i></button>
-                            </div>
-                            <input type="search" placeholder="Search" aria-describedby="button-addon2"
-                                class="search-text border-0 form-control ">
-                        </div>
-                    </div>
-                </form>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item navbar-brand">
-                        <a href="../for_business/business_page.html" class="navbar-brand">For Business</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#" class="navbar-brand">
-                            <img src="./images/icons/message.png" height="28" alt="messages">
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#" class="navbar-brand">
-                            <img src="./images/icons/notification.png" height="28" alt="notification">
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="../my_cart/cart_page.html" class="navbar-brand">
-                            <img src="./images/icons/cart.png" height="28" alt="cart">
-                        </a>
-                    </li>
-                    <li class="nav-item navbar-brand">
-                        <img src="./images/icons/line.png" height="28" alt="">
-                    </li>
-                    <li class="nav-item navbar-brand">
-                        <img src="./images/icons/user.png" height="28" alt="user">
-                    </li>
-                    <li class="nav-item navbar-brand dropdown">
-                        Tonmoy
-                        <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="width:12em; text-align: center;">
-                            <li><a href="" style="color:#000;">Profile</a></li>
-                            <hr>
-                            <li><a href="" style="color:#000;">Settings</a></li>
-                            <hr>
-                            <li><a href="" style="color:#000;">Help</a></li>
-                            <hr>
-                            <li><a href="" style="color:#000;">Log out</a></li>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+
+                            <!--Explore-->
+                            <li class="nav-item dropdown navbar-brand">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                            </li>
                         </ul>
-                    </li>
 
-                </ul>
-            </div>
-        </nav>
+                        <!--Search form-->
+                        <form class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0">
+                            <div class="p-1 search-button shadow-sm">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                    <input type="search" placeholder="Search" aria-describedby="button-addon2"
+                                        class="search-text border-0 form-control ">
+                                </div>
+                            </div>
+                        </form>
+
+                        <!--For business-->
+                        <ul class="nav navbar-nav ms-auto">
+                            <li class="nav-item navbar-brand">
+                                <a href="../for_business/business_page.html" class="nav-link">For Business</a>
+                            </li>
+
+                            <!--Messages-->
+                            <li class="nav-item navbar-brand dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <img src="./images/icons/message.png" height="28" alt="messages">
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <p class="text-center">Messages</p>
+                                    <hr class="messages-hr">
+
+                                    <form
+                                        class="form-search form-inline md-form form-sm ml-auto mr-auto my-2 my-lg-0 p-2">
+                                        <div class="p-1 search-message-button shadow-sm">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button id="button-addon2" type="submit"
+                                                        class="btn btn-link text-secondary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                                <input type="search" placeholder="Search in messages"
+                                                    aria-describedby="button-addon2"
+                                                    class="search-text border-0 form-control ">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="d-flex mt-3">
+                                        <div class="p-2">
+                                            <img src="./images/icons/message_profile.png">
+                                        </div>
+                                        <div>
+                                            <div class="p-1 sender-title">StudyBhai</div>
+                                            <div class="d-flex">
+                                                <div class="p-1">
+                                                    <p>Lorem ipsum dolor sit.</p>
+                                                </div>
+
+                                                <div class="ml-auto p-1">
+                                                    <p class="notification-time">5:45pm</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <div class="p-2">
+                                            <img src="./images/icons/message_profile.png">
+                                        </div>
+                                        <div>
+                                            <div class="p-1 sender-title">StudyBhai</div>
+                                            <div class="d-flex">
+                                                <div class="p-1">
+                                                    <p>Lorem ipsum dolor sit.</p>
+                                                </div>
+
+                                                <div class="ml-auto p-1">
+                                                    <p class="notification-time">5:45pm</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Notification-->
+                            <li class="nav-item navbar-brand dropdown">
+
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <img src="./images/icons/notification.png" height="28" alt="notification">
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <p class="text-center">Notifications</p>
+                                    <hr class="notification-hr">
+
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <p>Your password was changed</p>
+                                        </div>
+
+                                        <div class="ml-auto p-2">
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <p>Your password was changed</p>
+                                        </div>
+
+                                        <div class="ml-auto p-2">
+                                            <p class="notification-time">08/09/21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Cart-->
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <img src="./images/icons/cart.png" height="28" alt="cart">
+                                </a>
+                            </li>
+
+                            <div class="vr vr-color d-none d-lg-block"></div>
+
+                            <!--User image-->
+                            <li class="nav-item navbar-brand">
+                                <a href="#" class="nav-link">
+                                    <img src="./images/icons/user.png" height="28" alt="user">
+                                </a>
+                            </li>
+
+                            <!--User dropdown-->
+
+                            <li class="nav-item dropdown navbar-brand">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tonmoy</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="#" class="dropdown-item text-center">Profile</a>
+
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                    <a href="#" class="dropdown-item text-center">Settings</a>
+
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                    <a href="#" class="dropdown-item text-center">Help</a>
+
+                                    <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                    <a href="#" class="dropdown-item text-center" data-bs-toggle="modal"
+                                        data-bs-target="#logoutModal">Log out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <!-- User dropdown logout modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-5">
+                <div class="card modal-card p-5">
+                    <div class="mb-4">
+                        <h5 class="text-center" id="exampleModalLabel">Are you sure you want to log out?</h5>
+                    </div>
 
-    <!--Down Navbar-->
+                    <div class="text-center">
+                        <button type="button" class="yes-button mb-2">Yes</button>
+                        <button type="button" class="no-button mb-2" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--==================== DOWN NAVBAR ====================-->
     <nav class="sidebar navbar navbar-expand d-lg-block">
         <ul class="navbar-nav sidebar-menu">
+
+            <!--Dashboard icon-->
             <li class="nav-item">
                 <a href="../dashboard//dashboard.html" class="navbar-brand">
                     <img src="./images/icons/dashboard.png" class="down-navbar-icons" alt="dashboard">
                 </a>
             </li>
+
+            <!--Courses icon-->
             <li class="nav-item">
                 <a href="../my_courses/courses_pages.html" class="navbar-brand">
                     <img src="./images/icons/courses.png" class="down-navbar-icons" alt="courses">
                 </a>
             </li>
+
+            <!--Purchases icon-->
             <li class="nav-item">
                 <a href="../my_cart/cart_page.html" class="navbar-brand">
                     <img src="./images/icons/cart-2.png" class="down-navbar-icons" alt="cart">
                 </a>
             </li>
+
+            <!--Achievement icon-->
             <li class="nav-item">
                 <a href="./achievement_page.html" class="navbar-brand">
                     <img src="./images/icons/certificate.png" class="down-navbar-icons" alt="achievement">
@@ -115,17 +260,17 @@
         </ul>
     </nav>
 
-    <!--Purchases-->
+    <!--==================== PURCHASES ====================-->
     <section class="card container section-card">
         <div class="card-body">
 
             <!--My purchase Title-->
             <p style="font-size: 2rem;">My Purchases</p>
-            <hr class="mb-4" style="width:288px;background-color:#00C9A8;">
+            <hr class="mb-4" style="width:240px;background-color:#00C9A8;">
 
             <!--Purchase Menu-->
             <div class="d-flex mb-3">
-                <div class="mr-3"><a href="./purchase_page.html" class="purchase-text">Transaction</a></div>
+                <div class="me-3"><a href="./purchase_page.html" class="purchase-text">Transaction</a></div>
                 <div><a href="./voucher_page.html" class="purchase-text">Vouchers</a></div>
             </div>
             <hr style="background-color:#9F9F9F;">
@@ -146,15 +291,16 @@
                                         <div class="d-flex justify-content-lg-center">2000 BDT</div>
                                     </div>
                                     <div class="col-lg-4 col-md-12 col-sm-12">
-                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021</div>
-                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021</div>
+                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021
+                                        </div>
+                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                     
                     <div class="col col-md-12 mb-4">
                         <div class="purchase-card">
                             <div class="card-body">
@@ -167,15 +313,17 @@
                                         <div class="d-flex justify-content-lg-center">2000 BDT</div>
                                     </div>
                                     <div class="col-lg-4 col-md-12 col-sm-12">
-                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021</div>
-                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021</div>
+                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021
+                                        </div>
+                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
+
                     <div class="col col-md-12 mb-4">
                         <div class="purchase-card">
                             <div class="card-body">
@@ -188,8 +336,10 @@
                                         <div class="d-flex justify-content-lg-center">2000 BDT</div>
                                     </div>
                                     <div class="col-lg-4 col-md-12 col-sm-12">
-                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021</div>
-                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021</div>
+                                        <div class="d-flex justify-content-lg-end mb-3">Purchase Date: 10th August, 2021
+                                        </div>
+                                        <div class="d-flex justify-content-lg-end">Refund Before: 26th August, 2021
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -200,14 +350,10 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+
+    <!--==================== JavaScript Bundle with Popper ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
 

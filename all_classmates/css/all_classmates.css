@@ -105,7 +105,8 @@ form .search-message-button {
     font-size: 2em;
 }
 
-/*===============  BREAKPOINTS ===============*/
+/*===============  MEDIA QUERIES  ===============*/
+
 /*  media screen for mobile devices  */
 @media only screen and (max-width: 600px) {
     form .search-button {
