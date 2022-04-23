@@ -107,7 +107,7 @@ form .search-message-button {
 
 /*Profile Card*/
 .profile-card {
-    height: 18rem;
+    
     margin-top: -250px;
 }
 
@@ -134,7 +134,16 @@ form .search-message-button {
     color: #3A3A3A;
 
 }
-
+.edit-profile-button{
+width: 263px;
+height: 64px;
+margin-bottom: 20px;
+background: #00C9A8;
+border-radius: 50px;
+border: none;
+color: #fff;
+font-size: 20px;
+}
 /*=============== MEDIA QUERIES  ===============*/
 
 /*  media screen for tab ( portrait ) */
@@ -148,7 +157,6 @@ form .search-message-button {
 
     /*Profile Card*/
     .profile-card {
-        height: 18rem;
         margin-top: -100px;
     }
 
@@ -170,7 +178,6 @@ form .search-message-button {
     }
 
     .profile-card {
-        height: 18rem;
         margin-top: -100px;
     }
 
@@ -193,7 +200,6 @@ form .search-message-button {
     }
 
     .profile-card {
-        height: 18rem;
         margin-top: -100px;
     }
 
